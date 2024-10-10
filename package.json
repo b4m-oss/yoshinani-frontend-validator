@@ -22,7 +22,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && tsc",
+    "build": "NODE_ENV=production vite build vite build && tsc",
     "preview": "vite preview"
   },
   "devDependencies": {
