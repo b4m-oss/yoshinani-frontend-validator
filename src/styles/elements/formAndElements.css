@@ -1,0 +1,51 @@
+.yf-target-form {
+  color: var(--yf-text-color);
+  font-size: var(--yf-text-size);
+  display: flex;
+  flex-flow: column;
+  gap: .5em;
+
+  /* text like fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    border: 1px solid #ddd;
+    font-size: 110%;
+    padding: 0.4em 0.5em;
+  }
+
+  /* Select */
+  select {
+    font-size: 110%;
+    padding: 0.25em 0.4em;
+    border-color: var(--yf-text-color-caption);
+    border-radius: 0.25em;
+  }
+
+  /* checkbox and radio */
+  label {
+    &:has([type="radio"]),
+    &:has([type="checkbox"]) {
+      display: inline-block;
+      margin-bottom: .5em;
+      width: fit-content;
+      border: 1px solid #ddd;
+      padding: 0.5em 0.75em;
+      border-radius: 0.25em;
+      transition: background .2s ease;
+      &:hover {
+        background: var(--yf-hover);
+        cursor: pointer;
+      }
+    }
+    &:has([type="radio"]:checked), 
+    &:has([type="checkbox"]:checked) {
+      background-color: var(--yf-selected);
+      border-color: var(--yf-selected-border);
+    } 
+  }
+}

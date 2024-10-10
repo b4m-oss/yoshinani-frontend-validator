@@ -1,0 +1,53 @@
+.yf-target-form.collapse {
+  .yf-field-element {
+    & > *:first-child {
+      flex-flow: column;
+    }
+  }
+}
+
+.yf-field-element {
+  /* border: 1px solid #ddd; */
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+
+  &.collapse > *:first-child {
+    flex-flow: column;
+  }
+
+  & > *:first-child {
+    display: flex;
+    flex-flow: row;
+    gap: 0.5em;
+
+    /* label */
+    & > *:first-child {
+      min-width: 8em;
+      max-width: 15em;
+      padding-top: 0.5em;
+      position: relative;
+      padding-left: 3.25em;
+      &:before {
+        position: absolute;
+        content: "任意";
+        color: var(--yf-text-color-caption);
+        background: var(--yf-bg-caption);
+        padding: 0.5em 0.75em;
+        border-radius: 0.35em;
+        left: 0;
+        top: 0.25rem;
+        font-size: 75%;
+      }
+    }
+
+    &:has([required]) > *:first-child {
+      &:before {
+        content: "必須";
+        background: var(--yf-text-alert-color);
+        color: white;
+        padding: 0.5em 0.75em;
+        border-radius: 0.35em;
+      }
+    }
+  }
+}

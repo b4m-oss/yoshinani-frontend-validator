@@ -1,0 +1,33 @@
+{
+  "name": "yoshinani-frontend-validator",
+  "private": false,
+  "version": "0.1.0",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "kohki-shikata",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kohki-shikata/yoshinani-frontend-validator"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/yoshinaniFrontendValidator.umd.cjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "reset-css": "^5.0.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}

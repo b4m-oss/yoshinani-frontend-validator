@@ -1,0 +1,41 @@
+/* input field and messages */
+.yf-field-element-group {
+  width: 100%;
+  & > * {
+    width: 100%;
+  }
+}
+
+.yf-assist-message-list {
+  display: flex;
+  flex-flow: column;
+  gap: .4em;
+}
+
+.yf-assist-message-item {
+  padding: 0.5em 0;
+  font-size: 0.75em;
+  color: var(--yf-text-color-caption);
+
+  &.yf-alert {
+    color: var(--yf-text-alert-color);
+    border: var(--yf-text-alert-color) 1px solid;
+    padding: 0.5em 0.5em;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 0.45em;
+    position: relative;
+    padding-left: 2em;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0.25em;
+      color: var(--yf-text-alert-color);
+      background-image: url("data:image/svg+xml,%3Csvg fill='%23b60c0c' height='1em' width='1em' version='1.1' id='Filled_Icons' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg id='Alert-Filled'%3E%3Cg%3E%3Cpath d='M12,1L0,23h24L12,1z M13,19h-2v-2h2V19z M11,16v-6h2v6H11z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}

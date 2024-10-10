@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  <title>Yoshinani Form Sample HTML</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <main>
+    <form action="" class="yf-target-form">
+      <div class="yf-field-element">
+        <label>
+          <span>名前</span>
+          <div class="yf-field-element-group">
+            <input type="text" name="name" maxlength="50" autocomplete="name" placeholder="例：織田信長" required />
+            <ul class="yf-assist-message-list">
+              <li class="yf-assist-message-item"> 普段、業務で利用されている名前をお願いします。 </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+      <div class="yf-field-element">
+        <label>
+          <span>メールアドレス</span>
+          <div class="yf-field-element-group">
+            <input type="email" placeholder="例：oda@example.com" name="name" maxlength="50" autocomplete="email" required />
+          </div>
+        </label>
+      </div>
+      <div class="yf-field-element">
+        <label>
+          <span>電話番号</span>
+          <div class="yf-field-element-group">
+            <input type="tel" name="name" minlength="10" maxlength="11" autocomplete="on" placeholder="例：0612345678" />
+            <ul class="yf-assist-message-list">
+              <li class="yf-assist-message-item"> 日本の電話番号10桁または11桁でお願いします。 </li>
+              <li class="yf-assist-message-item yf-alert"> 正しい日本の電話番号形式ではないようです。 </li>
+              <li class="yf-assist-message-item yf-alert"> 正しい日本の電話番号形式ではないようです。 </li>
+            </ul>
+          </div>
+        </label>
+      </div>
+      <div class="yf-field-element">
+        <label>
+          <span>企業・組織名</span>
+          <div class="yf-field-element-group">
+            <input type="text" name="organization" maxlength="50" autocomplete="organization" placeholder="例：株式会社安土城"
+              required />
+          </div>
+        </label>
+      </div>
+      <div class="yf-field-element">
+        <label>
+          <span>従業員規模</span>
+          <select name="employee_number">
+            <option value="" selected disabled>選択して下さい</option>
+            <option value="1~50名">1~50名</option>
+            <option value="51~100名">51~100名</option>
+            <option value="101~500名">101~500名</option>
+            <option value="500名以上">500名以上</option>
+          </select>
+        </label>
+      </div>
+      <div class="yf-field-element">
+        <div>
+          <span>お問い合わせ内容</span>
+          <div class="yf-field-element-group">
+            <label>
+              <input type="radio" name="inquiry_type" value="当社のサービスに関するお問い合わせ" />
+              <span>当社のサービスに関するお問い合わせ</span>
+            </label>
+            <label>
+              <input type="radio" name="inquiry_type" value="当社の役員・社員への取材依頼" />
+              <span>当社の役員・社員への取材依頼</span>
+            </label>
+            <label>
+              <input type="radio" name="inquiry_type" value="採用に関するお問い合わせ" />
+              <span>採用に関するお問い合わせ</span>
+            </label>
+            <label>
+              <input type="radio" name="inquiry_type" value="その他" />
+              <span>その他</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="yf-field-element">
+        <div>
+          <span>面談希望日</span>
+          <div class="yf-field-element-group">
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="月曜日" required>
+              <span>月曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="火曜日" required>
+              <span>火曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="水曜日" required>
+              <span>水曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="木曜日" required>
+              <span>木曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="金曜日" required>
+              <span>金曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="土曜日" required>
+              <span>土曜日</span>
+            </label>
+            <label>
+              <input type="checkbox" name="prefered_date[]" value="日曜日" required>
+              <span>日曜日</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit">この内容で確認する</button>
+    </form>
+  </main>
+  
+  <script type="module" src="src/main.ts"></script>
+</body>
+
+</html>
