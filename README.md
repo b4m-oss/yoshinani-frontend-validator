@@ -19,6 +19,19 @@ Yoshinani Frontend Validator is a library designed to provide modern, effective 
 - **JavaScript Regular Expression Validation**: Instead of relying on the browser's interpretation of the `pattern` attribute, JavaScript-based regex validation ensures consistent behavior across browsers.
 - **Custom Function Execution**: You can run custom JavaScript functions on specific fields for advanced validation or custom behaviors.
 
+## How to contribute to develop
+
+We use vite. Node >= v18.
+
+```shell
+git clone https://github.com/kohki-shikata/yoshinani-frontend-validator.git
+```
+
+```shell
+cd yoshinani-frontend-validator
+npm i
+```
+
 ## Usage
 
 Yoshinani Frontend Validator primarily focuses on frontend validation but is designed with backend integration in mind. The library operates independently with VanillaJS, making it easy to integrate into any frontend stack without dependencies.
